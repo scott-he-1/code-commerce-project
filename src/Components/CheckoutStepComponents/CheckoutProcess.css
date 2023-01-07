@@ -1,0 +1,248 @@
+.checkoutProcess {
+  height: 700px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  z-index: -1;
+  position: relative;
+}
+
+.checkoutProcess.active {
+  opacity: 1;
+  z-index: 100;
+}
+
+.progressBar {
+  display: flex;
+  margin-top: 20px;
+  padding-right: 20%;
+}
+
+.stepSegment {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+}
+
+.leftWing {
+  height: 10px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.leftWing.active {
+  background: rgba(30, 30, 30, 0.9)
+}
+
+.circleSegment {
+  text-align: center;
+  position: relative;
+}
+
+.circle {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle.active {
+  background: rgba(30, 30, 30, 0.9);
+}
+
+.circle [data-icon] {
+  color: white;
+  height: 30px;
+  width: 30px;
+}
+
+.circle.active [data-icon] {
+  opacity: 1;
+}
+
+.checkoutMainDisplay {
+  display: flex;
+  grid-gap: 25px;
+  margin-top: 65px;
+  margin-right: 15px;
+}
+
+.checkoutMainDisplay.final > div {
+  flex: 1;
+}
+
+.summaryCartItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+  grid-gap: 10px;
+}
+
+.summaryCartItem > img {
+  width: 50px;
+  height: 50px;
+}
+
+.summaryCartItem * {
+  font-size: 12px;
+}
+
+.summaryItemInfo {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  font-weight: 100;
+}
+
+.summaryItemTotal {
+  float: right;
+  font-weight: 700;
+}
+
+.progressText {
+  position: absolute;
+  left: -25px;
+  width: 100px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.summarySection::-webkit-scrollbar {
+  display: none;
+}
+
+.summarySection {
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 70px;
+  height: 550px;
+  font-weight: 700;
+}
+
+.pricingAdjustor {
+  display: flex;
+}
+
+.pricingAdjustorTitle {
+  margin-right: auto;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.rightSpan {
+  float: right;
+}
+
+.nextStepButton {
+  background: white;
+  height: 50px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 23%;
+}
+
+.nextStepButton > button {
+  background: rgba(200, 51, 24, 1);
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 40px;
+  width: 90%;
+  top: 5px;
+}
+
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.stepComponentsSection {
+  position: relative;
+  margin-left: 20px;
+  height: 550px;
+  flex: 3;
+  padding: 35px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.stepComponentsSection > div {
+  position: absolute;
+  width: 90%;
+}
+
+.stepComponent {
+  z-index: -1;
+  opacity: 0;
+  width: 90%;
+}
+
+.stepComponent.active {
+  z-index: 100;
+  opacity: 1;
+}
+
+.componentTitle {
+  font-weight: 700;
+}
+
+.itemSeparator {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: 2px;
+  background: rgba(128, 128, 128, 0.2);
+}
+
+.backButton {
+  position: absolute;
+  width: 200px;
+  bottom: 15px;
+  left: 15px;
+  background: transparent;
+  font-weight: 700;
+}
+
+.summaryShippingInfo {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 3px;
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.summaryShippingInfo > div:nth-child(1) {
+  width: 150px;
+}
+
+.summaryHeader {
+  margin-bottom: 10px;
+}
+
+.paymentSummary {
+  display: flex;
+  align-items: center;
+  grid-gap: 10px;
+}
+
+.paymentSummary > div:nth-child(3) {
+  margin-right: 20px;
+}
+
+.summarySection .cardLogo {
+  width: 100px;
+  height: 50px;
+}

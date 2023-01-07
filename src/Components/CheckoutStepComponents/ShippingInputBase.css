@@ -1,0 +1,52 @@
+.shippingErrorMessage {
+  position: absolute;
+  top: 25px;
+  width: 200px;
+  padding: 5px;
+  font-size: 10px;
+  color: red;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.shippingInput {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 12px;
+  position: relative;
+}
+
+.shippingInput .yourAddress {
+  width: 660px;
+}
+
+.shippingInput .addressTitle,
+.shippingInput .nameSurname {
+  width: 400px;
+}
+
+.shippingInput .cellphone,
+.shippingInput .telephone {
+  width: 400px;
+}
+
+.shippingInputLabel {
+  width: 80px;
+}
+
+.shippingInput input {
+  width: 250px;
+  margin-bottom: 5px;
+}
+
+.shippingInput select{
+  height: 40px;
+  background: rgba(128, 128, 128, 0.2);
+  border: none;
+  width: 110px;
+}
+
+.shippingInput .zipCode {
+  width: 75px;
+}

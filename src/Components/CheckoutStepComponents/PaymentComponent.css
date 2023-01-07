@@ -1,0 +1,13 @@
+.stepComponent {
+  position: absolute;
+}
+
+.cardDataFields {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 30px;
+}
+
+.paymentField input[name="cvv"] {
+  width: 50px;
+}

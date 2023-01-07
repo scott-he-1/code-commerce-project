@@ -1,0 +1,10 @@
+.shippingForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.shippingFormFields {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 10px;
+}

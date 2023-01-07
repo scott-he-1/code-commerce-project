@@ -1,0 +1,30 @@
+.confirmation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+  grid-gap: 30px;
+}
+
+.confirmation svg {
+  height: 40px;
+  width: 40px;
+}
+
+.darkButton {
+  background: black;
+  color: white;
+  font-weight: 700;
+  height: 45px;
+  width: 40%;
+}
+
+.defaultButton {
+  background: transparent;
+  border: 1px solid black;
+  color: black;
+  font-weight: 700;
+  width: 30%;
+  height: 35px;
+}

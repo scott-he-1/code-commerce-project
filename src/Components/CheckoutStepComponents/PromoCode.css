@@ -1,0 +1,20 @@
+.promoCodeSection {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.applyPromoCode {
+  display: flex;
+  grid-gap: 20px;
+  margin-top: 10px;
+}
+
+.promoCode {
+  flex: 3;
+}
+
+.codeApply {
+  flex: 1;
+  background: transparent;
+}

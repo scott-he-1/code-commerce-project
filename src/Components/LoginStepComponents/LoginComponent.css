@@ -1,0 +1,99 @@
+.signInSignUp {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+  width: 400px;
+  height: 700px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  transition: all 0.5s;
+  opacity: 0;
+  z-index: -1;
+}
+
+.signInSignUp.active {
+  opacity: 1;
+  z-index: 100;
+}
+
+.signInSelector,
+.createAccountSelector {
+  width: 200px;
+  position: absolute;
+  font-size: 1rem;
+  text-align: center;
+  top: 0;
+  height: 40px;
+  padding: 10px 0;
+  box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.2);
+  opacity: 0.5;
+  font-weight: 700;
+  cursor: pointer;
+  transform: translateY(-100%);
+}
+
+.signInSection,
+.createAccountSection {
+  margin-top: 40px;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  background: white;
+  width: 400px;
+  height: 660px;
+}
+
+.signInSection.active, 
+.createAccountSection.active {
+  z-index: 5;
+}
+
+.signInSelector,
+.createAccountSelector {
+  z-index: 10;
+}
+
+.signInSection.active .signInSelector, 
+.createAccountSection.active .createAccountSelector {
+  background: white;
+  opacity: 1;
+}
+
+.createAccountSelector {
+  right: 0;
+}
+
+.accountButton {
+  background: rgba(0, 128, 0, 1) !important;
+  font-weight: 700;
+  color: white;
+}
+
+.faceBookButton {
+  background: rgba(66, 103, 178, 1) !important;
+  font-weight: 700;
+  color: white;
+}
+
+input {
+  width: 100%;
+  height: 30px;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+button {
+  cursor: pointer;
+  height: 30px;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.signInForm {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+}

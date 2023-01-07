@@ -1,0 +1,122 @@
+.cartNotifications {
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.notification {
+  display: flex;
+  padding: 10px;
+  height: 60px;
+  background: rgba(128, 128, 128, 0.2);
+  grid-gap: 10px;
+  position: relative;
+}
+
+.removeNotificationButton {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+
+.notificationRemovedItems {
+  color: rgba(200, 51, 12, 1);
+  overflow-x: hidden;
+}
+
+.notificationItem {
+  margin-right: 10px;
+}
+
+.deletedItemInfo {
+  font-size: 12px;
+}
+
+.warningSign {
+  height: 30px;
+  width: 30px;
+}
+
+.warningSign * {
+  height: 100%;
+  width: 100%;
+}
+
+.cartList {
+  display: flex;
+  flex-direction: column;
+}
+
+.cartItem,
+.itemPricingSection {
+  display: flex;
+  align-items: center;
+}
+
+.cartItem img {
+  height: 100px;
+  width: 100px;
+}
+
+.cartHeaders,
+.cartHeaders > div {
+  display: flex;
+  font-weight: 700;
+}
+
+.productHeader,
+.itemInfo {
+  margin-right: auto;
+}
+
+.productPricingHeaders > div {
+  width: 140px;
+  text-align: right;
+}
+
+svg {
+  cursor: pointer;
+}
+
+path {
+  pointer-events: none;
+}
+
+.deleteItemButton,
+.itemImage {
+  margin-right: 10px;
+}
+
+.itemPricingSection div {
+  width: 140px;
+  text-align: right;
+  font-weight: 700;
+}
+
+.itemPricingSection select {
+  width: 90px;
+  border: none;
+  background: rgba(128, 128, 128, 0.2);
+  text-align: center;
+  height: 40px;
+}
+
+.itemInfo span {
+  font-size: 12px;
+}
+
+.itemFileType,
+.itemLinesAmount {
+  font-weight: 700;
+}
+
+.forWhatConsumer,
+.deleteItemButton {
+  opacity: 0.3;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.itemTitle {
+  font-weight: 700;
+  font-size: 1rem;
+}

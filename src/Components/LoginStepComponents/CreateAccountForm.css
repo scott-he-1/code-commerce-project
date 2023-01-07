@@ -1,0 +1,26 @@
+.createAccountForm {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+}
+
+.passwordHider {
+  display: none;
+}
+
+.passwordHider.active {
+  display: block;
+}
+
+#eyeIcon, #eyeSlashIcon {
+  position: absolute;
+  right: 25px;
+  top: 105px;
+  cursor: pointer;
+  z-index: 3;
+  opacity: 0.6;
+}
